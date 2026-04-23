@@ -1,0 +1,45 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Composer
+vendor/lock
+
+# Drupal
+web/core
+web/libraries
+web/modules/contrib
+web/profiles/contrib
+web/themes/contrib
+web/sites/*/files
+web/sites/*/private
+
+# Documentation
+*.md
+docs/
+
+# Tests
+tests/
+phpunit.xml
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
