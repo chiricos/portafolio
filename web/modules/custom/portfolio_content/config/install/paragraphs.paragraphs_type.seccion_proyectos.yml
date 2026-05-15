@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies: {}
+id: seccion_proyectos
+label: 'Sección Proyectos'
+description: 'Proyectos destacados del portafolio'
+icon_uuid: null
+icon_default: ''
+behavior_plugins: {}

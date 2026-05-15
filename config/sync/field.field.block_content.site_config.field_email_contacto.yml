@@ -1,0 +1,21 @@
+uuid: 6e24f3ec-d5fa-42de-b5b9-4fbe610d332a
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.site_config
+    - field.storage.block_content.field_email_contacto
+_core:
+  default_config_hash: VCutN1DFXddopJ6V0QkcjaRpQPSq51fpVK9FrZCu19g
+id: block_content.site_config.field_email_contacto
+field_name: field_email_contacto
+entity_type: block_content
+bundle: site_config
+label: 'Email de contacto'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

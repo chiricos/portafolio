@@ -1,0 +1,21 @@
+uuid: ec425c1a-0b20-4907-b251-fa06f0d5e26f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo_seccion
+    - paragraphs.paragraphs_type.slide_item
+_core:
+  default_config_hash: pAP_qq3KiYzaJv8_5bFESRi26n3CiHPmY9F0wWoc8QE
+id: paragraph.slide_item.field_titulo_seccion
+field_name: field_titulo_seccion
+entity_type: paragraph
+bundle: slide_item
+label: Título
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tecnologias
+    - node.type.proyecto
+id: node.proyecto.field_tecnologias
+field_name: field_tecnologias
+entity_type: node
+bundle: proyecto
+label: 'Tecnologías'
+description: 'Ej: React, PHP, Docker'
+required: false
+translatable: false
+default_value: []
+default_value_callback: ''
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+field_type: string

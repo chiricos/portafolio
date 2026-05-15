@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies: {}
+id: seccion_habilidades
+label: 'Sección Habilidades'
+description: 'Habilidades y tecnologías'
+icon_uuid: null
+icon_default: ''
+behavior_plugins: {}

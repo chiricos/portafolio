@@ -1,0 +1,27 @@
+uuid: 9c12b299-0b87-4449-afb8-59335144e689
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cantidad
+    - paragraphs.paragraphs_type.seccion_noticias
+_core:
+  default_config_hash: yU9IiehoJkB2IQRQP-_RWHWqFvfjl_ufDCsmRKlsE2M
+id: paragraph.seccion_noticias.field_cantidad
+field_name: field_cantidad
+entity_type: paragraph
+bundle: seccion_noticias
+label: 'Cantidad de artículos a mostrar'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 3
+default_value_callback: ''
+settings:
+  min: 1
+  max: 12
+  prefix: ''
+  suffix: ''
+field_type: integer

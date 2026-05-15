@@ -1,0 +1,21 @@
+uuid: e24dd208-24ee-4679-9407-02732bb20959
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.site_config
+    - field.storage.block_content.field_telefono
+_core:
+  default_config_hash: 9K3rX5r1f2Sbdzhh3RWB470q6J0Y1P17yw1c5_vxEXM
+id: block_content.site_config.field_telefono
+field_name: field_telefono
+entity_type: block_content
+bundle: site_config
+label: Teléfono
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

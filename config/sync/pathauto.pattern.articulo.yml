@@ -1,0 +1,25 @@
+uuid: 6226b612-0d18-4287-9d4d-ca8f01b79db5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.articulo
+  module:
+    - node
+_core:
+  default_config_hash: HO7VSm-nF7YAk3vbCQX06vR1bN3ydyU4FG83pCGfeR0
+id: articulo
+label: Artículos
+type: 'canonical_entities:node'
+pattern: '/blog/[node:title]'
+selection_criteria:
+  f6c8f679-2e1f-4c16-9e00-ae1b52345678:
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      articulo: articulo
+selection_logic: and
+weight: 0
+relationships: {  }

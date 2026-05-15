@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo_seccion
+    - paragraphs.paragraphs_type.seccion_proyectos
+id: paragraph.seccion_proyectos.field_titulo_seccion
+field_name: field_titulo_seccion
+entity_type: paragraph
+bundle: seccion_proyectos
+label: 'Título de la sección'
+description: ''
+required: false
+translatable: false
+default_value: []
+default_value_callback: ''
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+field_type: string

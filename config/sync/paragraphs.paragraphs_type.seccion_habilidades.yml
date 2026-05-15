@@ -1,0 +1,12 @@
+uuid: 7b1dd84c-0d74-48ed-bb24-cd41258cdc16
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vwtmHgWbyQfSTGTyE9RsPT90gyNTrXgGWziPE1ABE7k
+id: seccion_habilidades
+label: 'Sección Habilidades'
+icon_uuid: null
+icon_default: ''
+description: 'Habilidades y tecnologías'
+behavior_plugins: {  }

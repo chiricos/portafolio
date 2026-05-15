@@ -1,0 +1,21 @@
+uuid: 8225d7d2-88de-421d-9f5c-9294b42deac1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo_seccion
+    - paragraphs.paragraphs_type.seccion_experiencia
+_core:
+  default_config_hash: XuWDNC6kS0aGboFwTHtNgAAYhH7_vRYaH4SLJqlSQeA
+id: paragraph.seccion_experiencia.field_titulo_seccion
+field_name: field_titulo_seccion
+entity_type: paragraph
+bundle: seccion_experiencia
+label: 'Título de la sección'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,12 @@
+uuid: e2484d0e-9931-435c-b61d-12cf73a5bd9d
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: qsGuRcJ33uRFFIE-aOJv1b2S1ueGLUy8y92j0DT4wx8
+id: seccion_noticias
+label: 'Sección Noticias'
+icon_uuid: null
+icon_default: ''
+description: 'Muestra los últimos artículos del blog'
+behavior_plugins: {  }

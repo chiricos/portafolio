@@ -1,0 +1,40 @@
+uuid: 734d5b2e-c277-4e7c-93a2-a2bae2795c4b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagenes
+    - node.type.proyecto
+  module:
+    - image
+_core:
+  default_config_hash: otjELExw3EHb_X3gOSqgUFhKdaVyzRUvidCpkFqHxso
+id: node.proyecto.field_imagenes
+field_name: field_imagenes
+entity_type: node
+bundle: proyecto
+label: Imágenes
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'proyectos/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {}
+id: site_config
+label: 'Configuración del sitio'
+description: 'Logo, redes sociales, contacto y texto del footer. Solo debe existir un registro.'
+revision: true

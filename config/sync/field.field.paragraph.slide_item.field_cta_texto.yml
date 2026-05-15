@@ -1,0 +1,21 @@
+uuid: 530d5409-199f-44c1-af6f-37aeabeca552
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta_texto
+    - paragraphs.paragraphs_type.slide_item
+_core:
+  default_config_hash: LZmi-G-bpmnpKMSQxyHzBA3bkqT4jh4v10Z2--yNIzM
+id: paragraph.slide_item.field_cta_texto
+field_name: field_cta_texto
+entity_type: paragraph
+bundle: slide_item
+label: 'Texto del botón'
+description: 'Texto del botón de llamada a la acción (CTA)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

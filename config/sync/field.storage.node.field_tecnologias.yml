@@ -1,0 +1,23 @@
+uuid: 4faa78e0-42fc-4415-836f-af8043dcb308
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: KUTC2vl4uMizKhyQAWoV4Meb9u7AtYvKR7VQtloT7qs
+id: node.field_tecnologias
+field_name: field_tecnologias
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

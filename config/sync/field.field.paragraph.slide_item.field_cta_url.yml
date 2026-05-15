@@ -1,0 +1,25 @@
+uuid: 347f856c-da48-4694-b290-717601957a88
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta_url
+    - paragraphs.paragraphs_type.slide_item
+  module:
+    - link
+_core:
+  default_config_hash: THTjRJa8G4CiQ-phjhrJd29Cz9Xk_xt_e1SbNz_F2to
+id: paragraph.slide_item.field_cta_url
+field_name: field_cta_url
+entity_type: paragraph
+bundle: slide_item
+label: 'URL del botón'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

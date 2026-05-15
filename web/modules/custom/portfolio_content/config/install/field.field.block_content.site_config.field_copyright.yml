@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.site_config
+    - field.storage.block_content.field_copyright
+id: block_content.site_config.field_copyright
+field_name: field_copyright
+entity_type: block_content
+bundle: site_config
+label: 'Texto de copyright'
+description: 'Ej: © 2025 Mi Nombre. Todos los derechos reservados.'
+required: false
+translatable: false
+default_value: []
+default_value_callback: ''
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+field_type: string

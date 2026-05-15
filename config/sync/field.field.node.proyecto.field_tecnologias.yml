@@ -1,0 +1,21 @@
+uuid: a90ede20-447a-4f28-9fcc-ea4a6474ea57
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tecnologias
+    - node.type.proyecto
+_core:
+  default_config_hash: 79aFgFYz4RsdhbDUmG9Vmuit-cIj3VDCbe1QzED3C0A
+id: node.proyecto.field_tecnologias
+field_name: field_tecnologias
+entity_type: node
+bundle: proyecto
+label: Tecnologías
+description: 'Ej: React, PHP, Docker'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

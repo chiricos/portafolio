@@ -1,0 +1,21 @@
+uuid: d85820e5-55e5-47d3-b3e3-3eb42e9e5a65
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo_seccion
+    - paragraphs.paragraphs_type.seccion_proyectos
+_core:
+  default_config_hash: T1k1gvEE0ywBggLmKKmYfIYhvuj_-FVXmR7lRMNKCwE
+id: paragraph.seccion_proyectos.field_titulo_seccion
+field_name: field_titulo_seccion
+entity_type: paragraph
+bundle: seccion_proyectos
+label: 'Título de la sección'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

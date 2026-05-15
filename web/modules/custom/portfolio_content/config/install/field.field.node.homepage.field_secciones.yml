@@ -1,0 +1,55 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_secciones
+    - node.type.homepage
+    - paragraphs.paragraphs_type.hero_slider
+    - paragraphs.paragraphs_type.seccion_experiencia
+    - paragraphs.paragraphs_type.seccion_habilidades
+    - paragraphs.paragraphs_type.seccion_noticias
+    - paragraphs.paragraphs_type.seccion_proyectos
+    - paragraphs.paragraphs_type.seccion_texto
+  module:
+    - paragraphs
+id: node.homepage.field_secciones
+field_name: field_secciones
+entity_type: node
+bundle: homepage
+label: 'Secciones'
+description: 'Agrega, ordena y configura las secciones de la página principal'
+required: false
+translatable: false
+default_value: []
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      hero_slider: hero_slider
+      seccion_noticias: seccion_noticias
+      seccion_proyectos: seccion_proyectos
+      seccion_habilidades: seccion_habilidades
+      seccion_experiencia: seccion_experiencia
+      seccion_texto: seccion_texto
+    target_bundles_drag_drop:
+      hero_slider:
+        weight: 0
+        enabled: true
+      seccion_noticias:
+        weight: 1
+        enabled: true
+      seccion_proyectos:
+        weight: 2
+        enabled: true
+      seccion_habilidades:
+        weight: 3
+        enabled: true
+      seccion_experiencia:
+        weight: 4
+        enabled: true
+      seccion_texto:
+        weight: 5
+        enabled: true
+field_type: entity_reference_revisions

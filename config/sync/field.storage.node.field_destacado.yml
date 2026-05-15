@@ -1,0 +1,20 @@
+uuid: f62bbaad-1617-4272-9d12-e84cca76ecb5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: ngcEOs5ULGWZfh58rS582cB6wCAjD85k18dQkI5NvEc
+id: node.field_destacado
+field_name: field_destacado
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

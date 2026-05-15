@@ -1,0 +1,24 @@
+uuid: 06d6041c-39a3-41a6-aca9-1e33ec13a761
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cuerpo
+    - paragraphs.paragraphs_type.seccion_texto
+  module:
+    - text
+_core:
+  default_config_hash: 8PZzCaQNuoEuPSp63TjCoijJKZ8YpNdnuH7MpZB38T0
+id: paragraph.seccion_texto.field_cuerpo
+field_name: field_cuerpo
+entity_type: paragraph
+bundle: seccion_texto
+label: Contenido
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

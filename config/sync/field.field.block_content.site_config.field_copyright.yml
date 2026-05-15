@@ -1,0 +1,21 @@
+uuid: 36003333-bb08-447c-93ee-0ad7afd952db
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.site_config
+    - field.storage.block_content.field_copyright
+_core:
+  default_config_hash: 0gyfHZpRa4FtrhOM8xc_YAtZ4Q7fVc8GIlD4uZcK460
+id: block_content.site_config.field_copyright
+field_name: field_copyright
+entity_type: block_content
+bundle: site_config
+label: 'Texto de copyright'
+description: 'Ej: © 2025 Mi Nombre. Todos los derechos reservados.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

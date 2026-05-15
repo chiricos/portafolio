@@ -1,0 +1,12 @@
+uuid: d6396328-e39a-404d-8a37-343ea9410ceb
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: PLIZCmVZZRW9rVLzoTRXKRzTRfsqNzXSEHjcRFlz1qM
+id: seccion_experiencia
+label: 'Sección Experiencia'
+icon_uuid: null
+icon_default: ''
+description: 'Experiencia laboral'
+behavior_plugins: {  }

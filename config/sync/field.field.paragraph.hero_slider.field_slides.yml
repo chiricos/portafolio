@@ -1,0 +1,33 @@
+uuid: 6fcbe73e-d13a-4912-88c8-fc91d9453194
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slides
+    - paragraphs.paragraphs_type.hero_slider
+    - paragraphs.paragraphs_type.slide_item
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: xEILKn5tNc8KQizGTNzFqO9ArLMYo48-f8ngGr6T1_w
+id: paragraph.hero_slider.field_slides
+field_name: field_slides
+entity_type: paragraph
+bundle: hero_slider
+label: Slides
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      slide_item: slide_item
+    negate: 0
+    target_bundles_drag_drop:
+      slide_item:
+        weight: 0
+        enabled: true
+field_type: entity_reference_revisions

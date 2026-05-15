@@ -1,0 +1,12 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+name: 'Página Principal'
+type: homepage
+description: 'Página principal del sitio. Solo debe existir un nodo de este tipo.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

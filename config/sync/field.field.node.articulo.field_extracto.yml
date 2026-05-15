@@ -1,0 +1,21 @@
+uuid: db0c0711-fd48-402b-bfaf-86f0f82d5bcb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_extracto
+    - node.type.articulo
+_core:
+  default_config_hash: dS58woCLrnhOL6kzcBP5GKHoE9GMJxhBFTQyg3Pmj68
+id: node.articulo.field_extracto
+field_name: field_extracto
+entity_type: node
+bundle: articulo
+label: Extracto
+description: 'Resumen corto para listados y tarjetas'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

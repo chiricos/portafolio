@@ -1,0 +1,13 @@
+uuid: 8de6a0f6-1427-4f7b-866c-d2aa321ad65f
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rIBlXvPX09KRYaid5gkVe0vKR2gUgEDdNDj8EnIL-Q4
+name: Proyecto
+type: proyecto
+description: 'Proyectos del portafolio'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

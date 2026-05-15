@@ -1,0 +1,10 @@
+langcode: es
+status: true
+dependencies: {}
+name: 'Artículo'
+type: articulo
+description: 'Artículos y noticias del blog'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

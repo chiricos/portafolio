@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta_texto
+    - paragraphs.paragraphs_type.slide_item
+id: paragraph.slide_item.field_cta_texto
+field_name: field_cta_texto
+entity_type: paragraph
+bundle: slide_item
+label: 'Texto del botón'
+description: 'Texto del botón de llamada a la acción (CTA)'
+required: false
+translatable: false
+default_value: []
+default_value_callback: ''
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+field_type: string

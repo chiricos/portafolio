@@ -55,10 +55,12 @@ Do **not** hand-edit:
 - `vendor/`, `web/core/`, `web/modules/contrib/`, `web/themes/contrib/`, `web/libraries/`
 
 Custom code lives in:
-- `web/modules/custom/` — currently empty; new modules go here
+- `web/modules/custom/portfolio_content/` — defines ALL content structure via `config/install/` YAMLs
 - `web/themes/` — no custom theme yet
 
-When adding a custom module, name it with the `portfolio_` prefix (e.g. `portfolio_projects`). Set `core_version_requirement: ^11` in `.info.yml`.
+`portfolio_content` sets up: content types (`homepage`, `articulo`, `proyecto`), 7 paragraph types, menus (`main`, `footer`), block content type (`site_config`), and pathauto patterns. Enable once with `ddev drush en portfolio_content -y`. **Never re-enable** — config/install only runs on first install.
+
+When adding more custom modules, use the `portfolio_` prefix and `core_version_requirement: ^11`.
 
 ## Config Sync Gotcha
 

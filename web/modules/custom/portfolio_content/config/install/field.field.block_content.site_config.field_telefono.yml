@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.site_config
+    - field.storage.block_content.field_telefono
+id: block_content.site_config.field_telefono
+field_name: field_telefono
+entity_type: block_content
+bundle: site_config
+label: 'Teléfono'
+description: ''
+required: false
+translatable: false
+default_value: []
+default_value_callback: ''
+settings:
+  max_length: 50
+  is_ascii: false
+  case_sensitive: false
+field_type: string

@@ -1,0 +1,12 @@
+uuid: 28025979-4e43-47fb-b6f8-f3665ef5ea17
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rQtczBbxlxiucGmghDPySGUQs0Ircy64c6mHwpyNRNM
+id: seccion_texto
+label: 'Sección Texto'
+icon_uuid: null
+icon_default: ''
+description: 'Sección de texto libre (About, etc.)'
+behavior_plugins: {  }

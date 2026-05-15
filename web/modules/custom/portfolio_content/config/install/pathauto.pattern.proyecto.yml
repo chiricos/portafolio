@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - pathauto
+id: proyecto
+label: 'Proyectos'
+type: canonical_entities:node
+pattern: 'proyectos/[node:title]'
+selection_criteria:
+  f6c8f679-2e1f-4c16-9e00-ae1b52345679:
+    id: entity_bundle:node
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      proyecto: proyecto
+selection_logic: and
+weight: 0

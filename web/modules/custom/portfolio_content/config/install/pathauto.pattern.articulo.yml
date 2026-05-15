@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - pathauto
+id: articulo
+label: 'Artículos'
+type: canonical_entities:node
+pattern: 'blog/[node:title]'
+selection_criteria:
+  f6c8f679-2e1f-4c16-9e00-ae1b52345678:
+    id: entity_bundle:node
+    negate: false
+    context_mapping:
+      node: node
+    bundles:
+      articulo: articulo
+selection_logic: and
+weight: 0

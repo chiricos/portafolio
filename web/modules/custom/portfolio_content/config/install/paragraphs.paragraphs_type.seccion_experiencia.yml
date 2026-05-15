@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies: {}
+id: seccion_experiencia
+label: 'Sección Experiencia'
+description: 'Experiencia laboral'
+icon_uuid: null
+icon_default: ''
+behavior_plugins: {}

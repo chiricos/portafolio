@@ -1,0 +1,21 @@
+uuid: bb1c86c3-3803-431d-a9ae-dd6c0b3b8359
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo_seccion
+    - paragraphs.paragraphs_type.seccion_habilidades
+_core:
+  default_config_hash: Y3lhBdXuMq9XCdwjw3mn8emxPrlr9BCybYWlsxn0zYk
+id: paragraph.seccion_habilidades.field_titulo_seccion
+field_name: field_titulo_seccion
+entity_type: paragraph
+bundle: seccion_habilidades
+label: 'Título de la sección'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

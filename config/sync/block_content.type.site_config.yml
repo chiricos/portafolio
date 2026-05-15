@@ -1,0 +1,10 @@
+uuid: abc35d48-0efb-4f07-9c7e-dbfd192ac60d
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JsjZY_OhX_7Hm7dd9zYBqm1WpulP77Wx9XLoSrSeo_Y
+id: site_config
+label: 'Configuración del sitio'
+revision: true
+description: 'Logo, redes sociales, contacto y texto del footer. Solo debe existir un registro.'

@@ -1,0 +1,22 @@
+uuid: 0f2a629c-55f6-4915-a587-a84f44007bbb
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: JRBSZQ8oo3u7g4_2YVqh6qv4udeuup1C0wA-Qdc-y-k
+id: paragraph.field_cantidad
+field_name: field_cantidad
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: true
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,15 @@
+name: 'Portfolio Content'
+description: 'Define content types, paragraph types, menus and blocks for the portfolio homepage.'
+package: Custom
+type: module
+core_version_requirement: ^11
+dependencies:
+  - drupal:node
+  - drupal:block_content
+  - drupal:image
+  - drupal:link
+  - drupal:text
+  - drupal:menu_ui
+  - paragraphs:paragraphs
+  - pathauto:pathauto
+  - token:token

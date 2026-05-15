@@ -1,0 +1,9 @@
+langcode: es
+status: true
+dependencies: {}
+id: seccion_noticias
+label: 'Sección Noticias'
+description: 'Muestra los últimos artículos del blog'
+icon_uuid: null
+icon_default: ''
+behavior_plugins: {}

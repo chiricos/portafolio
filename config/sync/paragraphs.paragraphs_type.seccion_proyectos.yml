@@ -1,0 +1,12 @@
+uuid: 8ee0ee76-84e5-4683-8181-e0c95a65bd35
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: uOlRgcZfVDKxaV32_yy8rww6nxSSB5w78n6_6czdXcc
+id: seccion_proyectos
+label: 'Sección Proyectos'
+icon_uuid: null
+icon_default: ''
+description: 'Proyectos destacados del portafolio'
+behavior_plugins: {  }

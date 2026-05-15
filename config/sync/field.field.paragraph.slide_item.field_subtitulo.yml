@@ -1,0 +1,21 @@
+uuid: 0e3f3175-0be2-452d-aef9-c31679920fd4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subtitulo
+    - paragraphs.paragraphs_type.slide_item
+_core:
+  default_config_hash: pHwtekMRdTeGfK2lob5b5C7guXPTzFXJy2CmQGh7XwM
+id: paragraph.slide_item.field_subtitulo
+field_name: field_subtitulo
+entity_type: paragraph
+bundle: slide_item
+label: Subtítulo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: 137c3b33-e430-4c38-92a8-8c8e679d4a3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: N2WbNmQx2NeGIcXvGux2eo5CHkfL8c5EHPInXjCSU_k
+id: node.field_extracto
+field_name: field_extracto
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

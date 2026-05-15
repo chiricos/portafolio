@@ -1,0 +1,21 @@
+uuid: 3c547848-884f-4e66-bcf1-583a801773b7
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+_core:
+  default_config_hash: 6evvstnLs-ZsYjY59y0v90dlUlYmLs5g-FSD9kVV_tw
+id: block_content.field_redes_sociales
+field_name: field_redes_sociales
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

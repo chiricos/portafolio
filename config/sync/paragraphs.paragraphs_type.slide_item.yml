@@ -1,0 +1,12 @@
+uuid: a9537607-3d6c-45e7-99e8-603be985cf48
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: QLLQDdSQeuSA0BLwNK1ACjkx8CDvEd8uhwpKp1CLlX0
+id: slide_item
+label: Slide
+icon_uuid: null
+icon_default: ''
+description: 'Slide individual del hero slider'
+behavior_plugins: {  }

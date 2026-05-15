@@ -1,0 +1,21 @@
+uuid: 2d172b0b-0542-48c6-9452-3b24f6b25e85
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo_seccion
+    - paragraphs.paragraphs_type.seccion_texto
+_core:
+  default_config_hash: bKnRunmIdKqdd9bITCTvn0OZpfHhwRjk_fICnTVEK40
+id: paragraph.seccion_texto.field_titulo_seccion
+field_name: field_titulo_seccion
+entity_type: paragraph
+bundle: seccion_texto
+label: 'Título de la sección'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

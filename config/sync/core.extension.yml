@@ -19,6 +19,7 @@ module:
   decoupled_router: 0
   dynamic_page_cache: 0
   editor: 0
+  entity_reference_revisions: 0
   field: 0
   field_ui: 0
   file: 0
@@ -41,6 +42,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  portfolio_content: 0
   search: 0
   serialization: 0
   shortcut: 0
@@ -56,6 +58,7 @@ module:
   views_ui: 0
   pathauto: 1
   views: 10
+  paragraphs: 11
   standard: 1000
 theme:
   olivero: 0

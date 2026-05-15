@@ -1,0 +1,12 @@
+uuid: b0c55a83-3929-415f-8424-25fcc50a6ed4
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: uBuetIZql1xW_g2J0AIHJrA14HMMZqTwVT2bxVndrss
+id: hero_slider
+label: 'Hero / Slider'
+icon_uuid: null
+icon_default: ''
+description: 'Slider principal de la página'
+behavior_plugins: {  }

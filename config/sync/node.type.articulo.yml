@@ -1,0 +1,13 @@
+uuid: 509729dc-16bf-4494-ac36-e23f10d06fad
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6TDAniuvDke27Mhm-NXrP7pXoBvlMykMMvPrMcVFil8
+name: Artículo
+type: articulo
+description: 'Artículos y noticias del blog'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
