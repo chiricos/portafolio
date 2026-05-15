@@ -16,9 +16,9 @@
 
 ## Config Gotcha
 - Do not assume tracked `config/sync/` is the active Drupal config export directory. It exists in the repo, but current executable settings do not point to it.
-- `web/sites/default/settings.ddev.php` sets `$settings['config_sync_directory'] = 'sites/default/files/sync'` when nothing else overrides it, and `web/sites/default/settings.php` does not override that.
+- `web/sites/default/settings.ddev.php` sets `$settings['config_sync_directory'] = '../config/sync'` when nothing else overrides it, and `web/sites/default/settings.php` does not override that.
 - Because `web/sites/*/files/` is gitignored, a normal `ddev drush config:export` currently writes to an ignored location unless settings are changed first.
-- Before doing config import/export work, verify the active sync dir and avoid claiming that `config/sync/` is authoritative without updating settings.
+- Before doing config import/export work, verify the active sync dir and avoid claiming that `../config/sync/` is authoritative without updating settings.
 
 ## Verification
 - If you changed PHP/Drupal code, run the narrowest relevant command inside DDEV first:
