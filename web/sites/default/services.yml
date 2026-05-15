@@ -236,7 +236,7 @@ parameters:
     maxAge: false
     # Sets the Access-Control-Allow-Credentials header if set to true. See
     # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials
-    supportsCredentials: false
+    supportsCredentials: true
 
   # The maximum number of entities stored in memory. Lowering this number can
   # reduce the amount of memory used in long-running processes like migrations,

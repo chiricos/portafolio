@@ -1,0 +1,10 @@
+uuid: fe7f2b54-fb09-4626-9726-95e2757e9f9f
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: zlxpI1nUDS46lrOkyHiD-72D5OFvlADLiyXT5B1iErk
+id: auth_code
+label: 'Auth code'
+description: 'The auth code type.'
+locked: true

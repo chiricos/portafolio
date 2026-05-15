@@ -10,7 +10,7 @@ This is a **headless Drupal 11 + Next.js** project:
 - `template/` — standalone static HTML/CSS/JS prototype. Not wired into Drupal.
 
 Decoupled stack modules in `composer.json`:
-- `drupal/next` — preview and on-demand revalidation bridge
+- `drupal/next` — preview and on-demand revalidation bridge (v2.x, compatible D10/D11)
 - `drupal/simple_oauth` — OAuth2 authentication for Next.js
 - `drupal/decoupled_router` — resolves Drupal paths/aliases for Next.js
 - `drupal/subrequests` — batches JSON:API calls
@@ -62,7 +62,7 @@ When adding a custom module, name it with the `portfolio_` prefix (e.g. `portfol
 
 ## Config Sync Gotcha
 
-`web/sites/default/settings.php` does **not** set `$settings['config_sync_directory']`. DDEV's `settings.ddev.php` sets it to `sites/default/files/sync` (which is gitignored).
+`web/sites/default/settings.php` does **not** set `$settings['config_sync_directory']`. DDEV's `settings.ddev.php` sets it to `../config/sync` (which is gitignored).
 
 `config/sync/` contains 190 committed YAML files — to use them as the active directory, explicitly add this to `settings.php`:
 

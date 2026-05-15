@@ -1,0 +1,11 @@
+uuid: fba2c298-3977-4d8e-901a-04e48ba40924
+langcode: es
+status: true
+dependencies:
+  module:
+    - consumers
+id: consumer.token
+label: Token
+description: null
+targetEntityType: consumer
+cache: true
