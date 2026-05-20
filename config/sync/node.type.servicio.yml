@@ -1,0 +1,13 @@
+uuid: f76f6796-bd11-4b5a-b36c-34dd7ad20763
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ''
+name: Servicio
+type: servicio
+description: 'Servicios ofrecidos en el portafolio'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

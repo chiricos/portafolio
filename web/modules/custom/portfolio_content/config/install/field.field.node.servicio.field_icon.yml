@@ -1,0 +1,23 @@
+uuid: b8573b48-cba8-43db-b8ad-cc1122fa5797
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icon
+    - node.type.servicio
+  module:
+    - node
+_core:
+  default_config_hash: ''
+id: node.servicio.field_icon
+field_name: field_icon
+entity_type: node
+bundle: servicio
+label: 'Ícono'
+description: 'Nombre del ícono (ej: heroicons:star)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

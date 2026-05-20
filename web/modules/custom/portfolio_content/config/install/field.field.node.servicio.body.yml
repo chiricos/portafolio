@@ -1,0 +1,26 @@
+uuid: c881364d-a10b-4c1f-8c90-50751c335282
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.servicio
+  module:
+    - text
+_core:
+  default_config_hash: ''
+id: node.servicio.body
+field_name: body
+entity_type: node
+bundle: servicio
+label: 'Descripción'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary
