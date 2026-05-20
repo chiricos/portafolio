@@ -1,19 +1,19 @@
-uuid: c881364d-a10b-4c1f-8c90-50751c335282
+uuid: 028cfef2-5aec-442a-a994-bae23c583f17
 langcode: es
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.servicio
+    - node.type.cliente
   module:
     - text
 _core:
   default_config_hash: ''
-id: node.servicio.body
+id: node.cliente.body
 field_name: body
 entity_type: node
-bundle: servicio
-label: Descripción
+bundle: cliente
+label: Testimonio
 description: ''
 required: false
 translatable: true

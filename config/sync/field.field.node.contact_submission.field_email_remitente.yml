@@ -1,0 +1,23 @@
+uuid: d169a91a-db98-4219-9c29-3483be0ee944
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_email_remitente
+    - node.type.contact_submission
+  module:
+    - node
+_core:
+  default_config_hash: ''
+id: node.contact_submission.field_email_remitente
+field_name: field_email_remitente
+entity_type: node
+bundle: contact_submission
+label: 'Email del remitente'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

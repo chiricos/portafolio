@@ -1,4 +1,4 @@
-uuid: 34a5025a-5d14-4434-b192-c0a25b93bcfa
+uuid: 3930abe2-e374-4ce1-88a4-442e921f6579
 langcode: en
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     - node
 _core:
   default_config_hash: ''
-id: node.field_icon
-field_name: field_icon
+id: node.field_cargo
+field_name: field_cargo
 entity_type: node
 type: string
 settings:

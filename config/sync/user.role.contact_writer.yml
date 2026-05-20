@@ -1,0 +1,14 @@
+uuid: 05a1edb7-96d5-4360-86cc-37d6c9b49723
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.contact_submission
+  module:
+    - node
+id: contact_writer
+label: 'Escritor de contacto'
+weight: 4
+is_admin: false
+permissions:
+  - 'create contact_submission content'

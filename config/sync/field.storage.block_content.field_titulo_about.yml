@@ -1,14 +1,14 @@
-uuid: 34a5025a-5d14-4434-b192-c0a25b93bcfa
+uuid: 9a5c4434-fdba-4e8e-a73f-39541e0e0468
 langcode: en
 status: true
 dependencies:
   module:
-    - node
+    - block_content
 _core:
   default_config_hash: ''
-id: node.field_icon
-field_name: field_icon
-entity_type: node
+id: block_content.field_titulo_about
+field_name: field_titulo_about
+entity_type: block_content
 type: string
 settings:
   max_length: 255

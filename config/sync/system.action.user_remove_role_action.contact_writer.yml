@@ -1,0 +1,14 @@
+uuid: 6e8bbf7b-654d-4788-b610-f933022e5880
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.contact_writer
+  module:
+    - user
+id: user_remove_role_action.contact_writer
+label: 'Elimina el rol Escritor de contacto al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: contact_writer

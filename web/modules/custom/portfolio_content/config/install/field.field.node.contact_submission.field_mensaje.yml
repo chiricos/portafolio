@@ -1,0 +1,24 @@
+uuid: e1f9f25e-f372-4921-ae66-d05a5827b1a6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mensaje
+    - node.type.contact_submission
+  module:
+    - text
+_core:
+  default_config_hash: ''
+id: node.contact_submission.field_mensaje
+field_name: field_mensaje
+entity_type: node
+bundle: contact_submission
+label: 'Mensaje'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

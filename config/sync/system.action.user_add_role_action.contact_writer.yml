@@ -1,0 +1,14 @@
+uuid: 05f017bd-0767-4b61-9d42-36089171d56a
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.contact_writer
+  module:
+    - user
+id: user_add_role_action.contact_writer
+label: 'Añade el rol Escritor de contacto al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: contact_writer

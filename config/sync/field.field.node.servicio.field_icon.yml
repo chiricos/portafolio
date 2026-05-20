@@ -13,7 +13,7 @@ id: node.servicio.field_icon
 field_name: field_icon
 entity_type: node
 bundle: servicio
-label: 'Ícono'
+label: Ícono
 description: 'Nombre del ícono (ej: heroicons:star)'
 required: false
 translatable: false

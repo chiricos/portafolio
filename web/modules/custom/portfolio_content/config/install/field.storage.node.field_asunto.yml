@@ -1,4 +1,4 @@
-uuid: 34a5025a-5d14-4434-b192-c0a25b93bcfa
+uuid: 66870436-5b06-4305-a511-53649c11bbf7
 langcode: en
 status: true
 dependencies:
@@ -6,18 +6,18 @@ dependencies:
     - node
 _core:
   default_config_hash: ''
-id: node.field_icon
-field_name: field_icon
+id: node.field_asunto
+field_name: field_asunto
 entity_type: node
 type: string
 settings:
   max_length: 255
-  case_sensitive: false
   is_ascii: false
+  case_sensitive: false
 module: core
 locked: false
 cardinality: 1
-translatable: true
+translatable: false
 indexes: {  }
 persist_with_no_fields: false
 custom_storage: false

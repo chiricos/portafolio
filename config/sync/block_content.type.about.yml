@@ -1,0 +1,10 @@
+uuid: 0b3a286b-51fb-41e3-8b2a-7955803d0fec
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ''
+id: about
+label: 'Sobre mí'
+revision: false
+description: 'Contenido de la sección "Sobre mí" del portfolio. Solo debe existir un registro.'

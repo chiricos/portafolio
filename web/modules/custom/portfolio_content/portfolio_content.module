@@ -4,3 +4,91 @@
  * @file
  * Portfolio Content module.
  */
+
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_entity_insert().
+ *
+ * Sends an email notification when a contact_submission node is created.
+ */
+function portfolio_content_entity_insert(EntityInterface $entity): void {
+  if ($entity->getEntityTypeId() !== 'node' || $entity->bundle() !== 'contact_submission') {
+    return;
+  }
+
+  // Resolve destination email from site_config block content.
+  $destination = _portfolio_content_get_contact_email();
+  if (empty($destination)) {
+    \Drupal::logger('portfolio_content')->warning('No destination email configured in site_config block.');
+    return;
+  }
+
+  $nombre = $entity->label();
+  $email  = $entity->get('field_email_remitente')->value ?? '';
+  $asunto = $entity->get('field_asunto')->value ?? '(sin asunto)';
+  $mensaje_field = $entity->get('field_mensaje')->first();
+  $mensaje = $mensaje_field ? $mensaje_field->getValue()['value'] : '';
+
+  $params = [
+    'subject' => '[Contacto] ' . $asunto,
+    'nombre'  => $nombre,
+    'email'   => $email,
+    'asunto'  => $asunto,
+    'mensaje' => $mensaje,
+    'node_url' => $entity->toUrl('canonical', ['absolute' => TRUE])->toString(),
+  ];
+
+  /** @var \Drupal\Core\Mail\MailManagerInterface $mail_manager */
+  $mail_manager = \Drupal::service('plugin.manager.mail');
+  $result = $mail_manager->mail(
+    'portfolio_content',
+    'contact_notification',
+    $destination,
+    \Drupal::languageManager()->getDefaultLanguage()->getId(),
+    $params,
+    NULL,
+    TRUE
+  );
+
+  if (!$result['result']) {
+    \Drupal::logger('portfolio_content')->error('Failed to send contact notification email to @to.', ['@to' => $destination]);
+  }
+}
+
+/**
+ * Implements hook_mail().
+ */
+function portfolio_content_mail(string $key, array &$message, array $params): void {
+  if ($key !== 'contact_notification') {
+    return;
+  }
+
+  $message['subject'] = $params['subject'];
+  $message['body'][]  = "Nuevo mensaje de contacto recibido:\n";
+  $message['body'][]  = "Nombre:  {$params['nombre']}";
+  $message['body'][]  = "Email:   {$params['email']}";
+  $message['body'][]  = "Asunto:  {$params['asunto']}";
+  $message['body'][]  = "Mensaje:\n{$params['mensaje']}";
+  $message['body'][]  = "\nVer submission: {$params['node_url']}";
+}
+
+/**
+ * Returns the contact destination email from the site_config block content.
+ */
+function _portfolio_content_get_contact_email(): string {
+  $blocks = \Drupal::entityTypeManager()
+    ->getStorage('block_content')
+    ->loadByProperties(['type' => 'site_config']);
+
+  if (!empty($blocks)) {
+    $block = reset($blocks);
+    $email_field = $block->get('field_email_contacto');
+    if (!$email_field->isEmpty()) {
+      return $email_field->value;
+    }
+  }
+
+  // Fallback to site mail.
+  return \Drupal::config('system.site')->get('mail') ?? '';
+}

@@ -1,0 +1,13 @@
+uuid: 92644781-12c1-460c-b432-16ac414a619c
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ''
+name: Cliente
+type: cliente
+description: 'Testimonios y reseñas de clientes'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

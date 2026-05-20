@@ -1,4 +1,4 @@
-uuid: 34a5025a-5d14-4434-b192-c0a25b93bcfa
+uuid: 487e4bf5-f4b2-4016-bed5-40c9350e6dfb
 langcode: en
 status: true
 dependencies:
@@ -6,18 +6,15 @@ dependencies:
     - node
 _core:
   default_config_hash: ''
-id: node.field_icon
-field_name: field_icon
+id: node.field_email_remitente
+field_name: field_email_remitente
 entity_type: node
-type: string
-settings:
-  max_length: 255
-  case_sensitive: false
-  is_ascii: false
+type: email
+settings: {  }
 module: core
 locked: false
 cardinality: 1
-translatable: true
+translatable: false
 indexes: {  }
 persist_with_no_fields: false
 custom_storage: false

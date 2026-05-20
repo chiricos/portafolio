@@ -1,0 +1,41 @@
+uuid: 29ce66d0-4085-4a8f-a34d-2126857f4ad7
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.about
+    - field.storage.block_content.field_foto_perfil
+  module:
+    - block_content
+    - image
+_core:
+  default_config_hash: ''
+id: block_content.about.field_foto_perfil
+field_name: field_foto_perfil
+entity_type: block_content
+bundle: about
+label: 'Foto de perfil'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: about
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

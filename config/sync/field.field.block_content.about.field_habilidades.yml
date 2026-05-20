@@ -1,0 +1,23 @@
+uuid: fc7b4456-0ad2-4a01-9bad-49d906c0309b
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.about
+    - field.storage.block_content.field_habilidades
+  module:
+    - block_content
+_core:
+  default_config_hash: ''
+id: block_content.about.field_habilidades
+field_name: field_habilidades
+entity_type: block_content
+bundle: about
+label: 'Habilidades / Stack'
+description: 'Lista de tecnologías y herramientas (un valor por ítem)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

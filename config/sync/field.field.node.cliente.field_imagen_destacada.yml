@@ -1,0 +1,40 @@
+uuid: 4873bcd7-284b-4125-9b73-8ecf99b441d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_destacada
+    - node.type.cliente
+  module:
+    - image
+_core:
+  default_config_hash: ''
+id: node.cliente.field_imagen_destacada
+field_name: field_imagen_destacada
+entity_type: node
+bundle: cliente
+label: Imagen
+description: 'Foto del cliente'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'clientes/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

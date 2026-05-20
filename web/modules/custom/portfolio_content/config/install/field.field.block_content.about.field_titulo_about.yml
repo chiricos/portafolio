@@ -1,0 +1,23 @@
+uuid: d6ab6c05-aea0-40aa-913b-9cd7a4b84bd3
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.about
+    - field.storage.block_content.field_titulo_about
+  module:
+    - block_content
+_core:
+  default_config_hash: ''
+id: block_content.about.field_titulo_about
+field_name: field_titulo_about
+entity_type: block_content
+bundle: about
+label: 'Título de la sección'
+description: 'Título principal (ej: "Un poco sobre quién soy")'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

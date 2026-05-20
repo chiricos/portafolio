@@ -1,0 +1,13 @@
+uuid: 2c27de1a-8803-42c7-bfca-eba7101e92a8
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ''
+name: 'Contacto (Submission)'
+type: contact_submission
+description: 'Mensajes recibidos desde el formulario de contacto'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

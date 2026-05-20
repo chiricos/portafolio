@@ -1,0 +1,28 @@
+uuid: be861f8a-402d-423b-8b91-d68c2b871ae7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_estrellas
+    - node.type.cliente
+  module:
+    - node
+_core:
+  default_config_hash: ''
+id: node.cliente.field_estrellas
+field_name: field_estrellas
+entity_type: node
+bundle: cliente
+label: 'Estrellas'
+description: 'Calificación del cliente (1-5)'
+required: false
+translatable: false
+default_value:
+  - value: 5
+default_value_callback: ''
+settings:
+  min: 1
+  max: 5
+  prefix: ''
+  suffix: ''
+field_type: integer

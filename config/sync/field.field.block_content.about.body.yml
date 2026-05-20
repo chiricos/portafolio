@@ -1,20 +1,21 @@
-uuid: c881364d-a10b-4c1f-8c90-50751c335282
+uuid: 47373cbb-f5cc-4ed0-a212-88bbee75dbde
 langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.node.body
-    - node.type.servicio
+    - block_content.type.about
+    - field.storage.block_content.body
   module:
+    - block_content
     - text
 _core:
   default_config_hash: ''
-id: node.servicio.body
+id: block_content.about.body
 field_name: body
-entity_type: node
-bundle: servicio
-label: Descripción
-description: ''
+entity_type: block_content
+bundle: about
+label: 'Texto (párrafos)'
+description: 'Texto descriptivo. Usa párrafos HTML para separar el contenido.'
 required: false
 translatable: true
 default_value: {  }

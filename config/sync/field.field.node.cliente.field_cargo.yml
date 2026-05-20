@@ -1,0 +1,23 @@
+uuid: 0b47118c-d82c-444c-9d36-9ebdf0b8bf09
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cargo
+    - node.type.cliente
+  module:
+    - node
+_core:
+  default_config_hash: ''
+id: node.cliente.field_cargo
+field_name: field_cargo
+entity_type: node
+bundle: cliente
+label: Cargo
+description: 'Cargo o posición del cliente (ej: CEO, Director)'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

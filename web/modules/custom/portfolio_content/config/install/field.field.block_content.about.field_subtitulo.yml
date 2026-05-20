@@ -1,0 +1,24 @@
+uuid: 2fd4a647-a5da-41c5-a31e-f4da116eb3d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.about
+    - field.storage.block_content.field_subtitulo
+  module:
+    - block_content
+_core:
+  default_config_hash: ''
+id: block_content.about.field_subtitulo
+field_name: field_subtitulo
+entity_type: block_content
+bundle: about
+label: 'Etiqueta superior'
+description: 'Texto pequeño encima del título (ej: "Sobre mí")'
+required: false
+translatable: true
+default_value:
+  - value: 'Sobre mí'
+default_value_callback: ''
+settings: {  }
+field_type: string
