@@ -55,24 +55,18 @@ Do **not** hand-edit:
 - `vendor/`, `web/core/`, `web/modules/contrib/`, `web/themes/contrib/`, `web/libraries/`
 
 Custom code lives in:
-- `web/modules/custom/portfolio_content/` — defines ALL content structure via `config/install/` YAMLs
-- `web/themes/` — no custom theme yet
+- `web/modules/custom/portfolio_content/` — defines ALL content structure via `config/install/` YAMLs, plus one real hook implementation in `portfolio_content.module`: `hook_entity_insert()` sends a contact-form notification email when a `contact_submission` node is created, resolving the destination address from the `site_config` block content (`field_email_contacto`), falling back to the site email.
+- `web/themes/custom/portfolio_theme/` — custom theme (base theme `stable9`), ported from the static `template/` prototype. Assets are declared in `portfolio_theme.libraries.yml` (`global-assets`: `css/styles.css`, `js/scripts.js`, depends on `core/jquery`) and attached via regions defined in `portfolio_theme.info.yml`.
 
-`portfolio_content` sets up: content types (`homepage`, `articulo`, `proyecto`), 7 paragraph types, menus (`main`, `footer`), block content type (`site_config`), and pathauto patterns. Enable once with `ddev drush en portfolio_content -y`. **Never re-enable** — config/install only runs on first install.
+`portfolio_content` sets up: content types (`homepage`, `articulo`, `proyecto`, `servicio`, `cliente`, `contact_submission`), 7 paragraph types, menus (`main`, `footer`), block content types (`site_config`, `about`), and pathauto patterns. Enable once with `ddev drush en portfolio_content -y`. **Never re-enable** — config/install only runs on first install.
 
 When adding more custom modules, use the `portfolio_` prefix and `core_version_requirement: ^11`.
 
 ## Config Sync Gotcha
 
-`web/sites/default/settings.php` does **not** set `$settings['config_sync_directory']`. DDEV's `settings.ddev.php` sets it to `../config/sync` (which is gitignored).
+`web/sites/default/settings.php` explicitly sets `$settings['config_sync_directory'] = '../config/sync';` near the bottom of the file — this **is** the active directory (it is not left to DDEV's default). Don't assume otherwise; if this line is ever removed, DDEV's `settings.ddev.php` falls back to `sites/default/files/sync` (gitignored), which would silently change `config:export`/`config:import` behavior.
 
-`config/sync/` contains 190 committed YAML files — to use them as the active directory, explicitly add this to `settings.php`:
-
-```php
-$settings['config_sync_directory'] = '../config/sync';
-```
-
-Before any `config:export` or `config:import` work, verify the active sync dir:
+`config/sync/` contains ~190 committed YAML files. Before any `config:export` or `config:import` work, verify the active sync dir:
 ```bash
 make drush status | grep "Config"
 ```

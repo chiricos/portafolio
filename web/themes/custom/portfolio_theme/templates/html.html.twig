@@ -3,17 +3,21 @@
   <head>
     <head-placeholder token="{{ placeholder_token|raw }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
-    <css-placeholder />
-    <js-placeholder />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <css-placeholder token="{{ placeholder_token|raw }}">
+    <js-placeholder token="{{ placeholder_token|raw }}">
   </head>
-  <body{{ attributes.addClass('mi-clase-body') }}>
-    <a href="#main-content" class="visually-hidden focusable">
-      {{ 'Skip to main content'|t }}
-    </a>
+  <body{{ attributes }}>
+    {# 
+      ¡OBLIGATORIO! page_top renderiza la barra de herramientas 
+      del administrador de Drupal arriba del todo. 
+    #}
     {{ page_top }}
+    
+    {# Aquí se renderiza todo el contenido de page.html.twig #}
     {{ page }}
+
+    {# page_bottom maneja cierres de scripts del core #}
     {{ page_bottom }}
-    <js-bottom-placeholder />
+    <js-bottom-placeholder token="{{ placeholder_token|raw }}">
   </body>
 </html>
