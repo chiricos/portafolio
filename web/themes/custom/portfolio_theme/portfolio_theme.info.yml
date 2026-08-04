@@ -18,3 +18,4 @@ regions:
   footer: 'Pie de página'
 libraries:
   - portfolio_theme/global-assets
+  - portfolio_theme/external
