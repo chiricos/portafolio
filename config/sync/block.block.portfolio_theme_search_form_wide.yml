@@ -1,0 +1,23 @@
+uuid: 15e6e81b-1e1a-4dd6-8947-3a55f01d8271
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - portfolio_theme
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: portfolio_theme_search_form_wide
+theme: portfolio_theme
+region: header
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulario de búsqueda (ancho)'
+  label_display: '0'
+  provider: search
+  page_id: null
+visibility: {  }

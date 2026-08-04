@@ -1,0 +1,23 @@
+uuid: 35b7af26-6455-48f9-8d74-a349e6ff5108
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - portfolio_theme
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: portfolio_theme_search_form_narrow
+theme: portfolio_theme
+region: header
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulario de búsqueda (estrecho)'
+  label_display: '0'
+  provider: search
+  page_id: null
+visibility: {  }

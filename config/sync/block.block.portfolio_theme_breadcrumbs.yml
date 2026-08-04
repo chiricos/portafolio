@@ -1,0 +1,22 @@
+uuid: 3b195c62-4910-4a80-b1e5-2a3d838f5423
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - portfolio_theme
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: portfolio_theme_breadcrumbs
+theme: portfolio_theme
+region: header
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Enlaces de ayuda a la navegación'
+  label_display: '0'
+  provider: system
+visibility: {  }

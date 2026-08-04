@@ -1,0 +1,22 @@
+uuid: c4cbb65d-d8c3-48b8-a38f-079106aaf9a0
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - portfolio_theme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: portfolio_theme_content
+theme: portfolio_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  label_display: '0'
+  provider: system
+visibility: {  }

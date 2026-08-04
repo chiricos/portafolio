@@ -47,6 +47,8 @@ module:
   path_alias: 0
   portfolio_content: 0
   search: 0
+  search_help: 0
+  search_node: 0
   serialization: 0
   shortcut: 0
   simple_oauth: 0
@@ -66,4 +68,6 @@ module:
 theme:
   olivero: 0
   claro: 0
+  stable9: 0
+  portfolio_theme: 0
 profile: standard

@@ -1,0 +1,20 @@
+name: 'Portfolio Tema'
+type: theme
+description: 'Tema personalizado adaptado desde plantilla estática.'
+package: Custom
+core_version_requirement: ^10 || ^11
+base theme: stable9
+regions:
+  header: 'Cabecera'
+  primary_menu: 'Menú principal'
+  secondary_menu: 'Menú secundario'
+  page_top: 'Parte superior de página'
+  page_bottom: 'Parte inferior de página'
+  highlighted: 'Destacado'
+  breadcrumb: 'Migas de pan'
+  content: 'Contenido principal'
+  sidebar_first: 'Barra lateral izquierda'
+  sidebar_second: 'Barra lateral derecha'
+  footer: 'Pie de página'
+libraries:
+  - portfolio_theme/global-assets
