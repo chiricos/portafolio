@@ -1,0 +1,31 @@
+{# templates/views/views-view-unformatted--experiencias.html.twig #}
+
+{#
+  @file
+  Template para mostrar las experiencias laborales.
+  #}
+
+ <!-- Experience-->
+<section class="resume-section" id="experience">
+    <div class="resume-section-content">
+        
+        <h2 class="mb-5">{{ view.getTitle() }}</h2>
+        
+        {% for row in rows %}
+          {% set fecha = row.content['#view'].style_plugin.render_tokens[loop.index0]['{{ field_date }}'] ?? '' %}
+            {% set node = row.content['#row']._entity %}
+            {% if node %}
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">{{ node.title.value }}</h3>
+                        <div class="subheading mb-3">{{ node.field_desciption.value }}</div>
+                        <p>{{ node.body.processed|raw }}</p>
+                    </div>
+                    <div class="flex-shrink-0"><span class="text-primary">{{ fecha }}</span></div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+<hr class="m-0" />
+

@@ -1,0 +1,19 @@
+uuid: 573ac8bd-e270-4075-b8aa-c12491c1a0e8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_desciption
+    - node.type.experiencia
+id: node.experiencia.field_desciption
+field_name: field_desciption
+entity_type: node
+bundle: experiencia
+label: Desciption
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

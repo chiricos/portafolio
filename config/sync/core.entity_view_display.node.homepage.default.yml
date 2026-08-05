@@ -1,0 +1,40 @@
+uuid: a8cc4df2-1060-4715-98e3-723d0c46d94c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage.field_secciones
+    - node.type.homepage
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          6e4536c8-4857-4ccb-9f96-e4f0603147fe:
+            uuid: 6e4536c8-4857-4ccb-9f96-e4f0603147fe
+            region: content
+            configuration:
+              id: 'extra_field_block:node:homepage:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.homepage.default
+targetEntityType: node
+bundle: homepage
+mode: default
+content: {  }
+hidden:
+  field_secciones: true
+  langcode: true
+  links: true

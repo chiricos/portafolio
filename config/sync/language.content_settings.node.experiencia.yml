@@ -1,0 +1,11 @@
+uuid: f3670907-5b08-4ac2-82df-55f7793122b4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.experiencia
+id: node.experiencia
+target_entity_type_id: node
+target_bundle: experiencia
+default_langcode: site_default
+language_alterable: false

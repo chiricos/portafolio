@@ -1,0 +1,35 @@
+uuid: 46991122-619e-48d1-8042-15020b69b40f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.experiencia.body
+    - field.field.node.experiencia.field_date
+    - field.field.node.experiencia.field_desciption
+    - node.type.experiencia
+  module:
+    - text
+    - user
+id: node.experiencia.teaser
+targetEntityType: node
+bundle: experiencia
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_date: true
+  field_desciption: true
+  langcode: true

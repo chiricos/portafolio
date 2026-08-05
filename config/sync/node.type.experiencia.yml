@@ -1,0 +1,17 @@
+uuid: a611ff4e-927c-43ac-95ca-3b8e229d461b
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Experiencia
+type: experiencia
+description: 'Experiencia personal'
+help: null
+new_revision: false
+preview_mode: 1
+display_submitted: true

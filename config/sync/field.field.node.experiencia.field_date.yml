@@ -1,0 +1,21 @@
+uuid: 77484ed8-506e-4f12-989d-6142699c3732
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date
+    - node.type.experiencia
+  module:
+    - datetime
+id: node.experiencia.field_date
+field_name: field_date
+entity_type: node
+bundle: experiencia
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

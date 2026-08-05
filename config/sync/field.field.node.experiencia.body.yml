@@ -1,0 +1,32 @@
+uuid: 12f37a0a-c549-4890-bc53-085d41537662
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.plain_text
+    - filter.format.restricted_html
+    - node.type.experiencia
+  module:
+    - text
+id: node.experiencia.body
+field_name: body
+entity_type: node
+bundle: experiencia
+label: Cuerpo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+    - plain_text
+field_type: text_with_summary
