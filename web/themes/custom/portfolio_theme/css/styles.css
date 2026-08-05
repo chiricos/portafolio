@@ -85,6 +85,10 @@
   box-sizing: border-box;
 }
 
+#navbarResponsive > div {
+  width: 100%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;

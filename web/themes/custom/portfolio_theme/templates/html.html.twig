@@ -8,12 +8,8 @@
     {{ favicon }}
   </head>
   <body{{ attributes }} id="page-top">
-    {# 
-      ¡OBLIGATORIO! page_top renderiza la barra de herramientas 
-      del administrador de Drupal arriba del todo. 
-    #}
     {{ page_top }}
-    
+    {% include  directory ~ '/templates/header.html.twig' %} 
     {# Aquí se renderiza todo el contenido de page.html.twig #}
     {{ page }}
 
