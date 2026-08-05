@@ -1,0 +1,24 @@
+uuid: b24cb302-39c2-429a-b445-d2572065586d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.educacion
+  module:
+    - text
+id: node.educacion.body
+field_name: body
+entity_type: node
+bundle: educacion
+label: Cuerpo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

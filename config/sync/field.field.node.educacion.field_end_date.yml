@@ -1,0 +1,21 @@
+uuid: ed233f28-1ad1-4a16-83c1-924a87d60df9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_end_date
+    - node.type.educacion
+  module:
+    - datetime
+id: node.educacion.field_end_date
+field_name: field_end_date
+entity_type: node
+bundle: educacion
+label: 'Fecha final'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,59 @@
+uuid: 06f1588f-ad4c-4f21-811e-2dc56eec6c93
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.educacion.body
+    - field.field.node.educacion.field_desciption
+    - field.field.node.educacion.field_end_date
+    - field.field.node.educacion.field_start_date
+    - node.type.educacion
+  module:
+    - datetime
+    - text
+    - user
+id: node.educacion.default
+targetEntityType: node
+bundle: educacion
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_desciption:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_end_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_start_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

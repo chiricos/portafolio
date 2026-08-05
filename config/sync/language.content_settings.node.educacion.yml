@@ -1,0 +1,11 @@
+uuid: 46ea7457-d9b0-4b13-a1e1-f951cc68178b
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.educacion
+id: node.educacion
+target_entity_type_id: node
+target_bundle: educacion
+default_langcode: site_default
+language_alterable: false
